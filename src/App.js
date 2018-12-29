@@ -31,7 +31,8 @@ class App extends Component {
         const index2 = this.state.orderList.findIndex(item => item.name === name);
         copy.sign.part1 = "";
         copy.sign.part2 = "";
-        const price = foodArr[index].price;
+        let price = foodArr;
+        price = price[index].price;
         if (copy.orderList.length > 0 && index2 > -1) {
             copy.orderList[index2].count++;
         } else {
