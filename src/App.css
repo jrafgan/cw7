@@ -1,0 +1,14 @@
+.App {
+  text-align: center;
+}
+
+.mainDiv {
+  display: grid;
+  grid-template-columns: auto auto;
+}
+
+.orderDetails,
+.foodList {
+  border: 1px solid grey;
+  grid-gap: 20px;
+}
